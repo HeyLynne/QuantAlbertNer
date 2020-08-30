@@ -39,8 +39,8 @@ The format of label is as follows:
 ```
 其他B B-O
 其他I I-O
-动作B B-O
-动作I I-O
+动作B B-Verb
+动作I I-Verb
 ```
 
 ## Result
