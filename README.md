@@ -44,7 +44,7 @@ The format of label is as follows:
 ```
 
 ## Result
-We quantified albert in our own dataset. The inference speed increased 10% but the accuracy drops 3%.
+We quantified albert in our own dataset. The inference speed increased 10% but the accuracy drops 3%. And the performance was 0.5% higher when we use focal loss. But the time cose increase 30%. 
 
 ## Todo
 - Static quantify the model.
