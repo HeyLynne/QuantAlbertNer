@@ -12,12 +12,12 @@ pip install -r requirements.txt
 ## Pretrained model
 We have already download the albert chinese tiny in prev_trained_model. If you need more pre-trained model please checkout:
 ### Albert Chinese Pre-trained Model Download
-- (albert_tiny_zh)[https://drive.google.com/open?id=1qAykqB2OXIYXSVMQSt_EDEPCorTAkIvu]
-- (albert_small_zh)[https://drive.google.com/open?id=1t-DJKAqALgwlO8J_PZ3ZtOy0NwLipGxA]
-- (albert_base_zh)[https://drive.google.com/open?id=1m_tnylngzEA94xVvBCc3I3DRQNbK32z3]
-- (albert_large_zh)[https://drive.google.com/open?id=19UZPHfKJZY9BGS4mghuKcFyAIF3nJdlX]
-- (albert_xlarge_zh)[https://drive.google.com/open?id=1DdZ3-AXaom10nrx8C99UhFYsx1BYYEJx]
-- (albert_xxlarge_zh)[https://drive.google.com/open?id=1F-Mu9yWvj1XX5WN6gtyxbVLWr610ttgC]
+- albert_tiny_zh:https://drive.google.com/open?id=1qAykqB2OXIYXSVMQSt_EDEPCorTAkIvu
+- albert_small_zh:https://drive.google.com/open?id=1t-DJKAqALgwlO8J_PZ3ZtOy0NwLipGxA
+- albert_base_zh:https://drive.google.com/open?id=1m_tnylngzEA94xVvBCc3I3DRQNbK32z3
+- albert_large_zh:https://drive.google.com/open?id=19UZPHfKJZY9BGS4mghuKcFyAIF3nJdlX
+- albert_xlarge_zh:https://drive.google.com/open?id=1DdZ3-AXaom10nrx8C99UhFYsx1BYYEJx
+- albert_xxlarge_zh:https://drive.google.com/open?id=1F-Mu9yWvj1XX5WN6gtyxbVLWr610ttgC
 
 ## Fine-tune
 You can fine-tune model with Albert and Albert-Focal loss.
@@ -49,3 +49,5 @@ We quantified albert in our own dataset. The inference speed increased 10% but t
 ## Todo
 - Static quantify the model.
 - Run the model in an open-source dataset.
+
+If you have any questions please contact me at lion19930924@163.mail. Thanks a lot.
