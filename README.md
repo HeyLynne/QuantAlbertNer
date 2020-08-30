@@ -1,4 +1,4 @@
-# QuantAlbert
+# QuantAlbertNer
 Quantify Albert for NER(Named Entity Recognition) also implement Albert with focal loss
 
 This repository contains an implementation of [Albert](https://arxiv.org/pdf/1909.11942.pdf) in Pytorch for NER task. The code was based on the [albert_pytorch](https://github.com/lonePatient/albert_pytorch).
