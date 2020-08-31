@@ -22,13 +22,47 @@ We have already download the albert chinese tiny in prev_trained_model. If you n
 ## Fine-tune
 You can fine-tune model with Albert and Albert-Focal loss.
 ```
+python run_albertner.py --data_dir=data/new \
+  --model_type=albert \
+  --model_name_or_path=prev_trained_model\albert_tiny_zh \
+  --task_name=ner \
+  --output_dir=$dir \
+  --vocab_file=prev_trained_model\albert_tiny_zh\vocab.txt \
+  --do_train \
+  --do_eval \
+  --overwrite_output_dir \
+  --output_eval \
+  --label_with_bi
 
+python run_albert_focalloss.py --data_dir=data/new \
+  --model_type=albert \
+  --model_name_or_path=prev_trained_model\albert_tiny_zh \
+  --task_name=ner \
+  --output_dir=$dir \
+  --vocab_file=prev_trained_model\albert_tiny_zh\vocab.txt \
+  --do_train \
+  --do_eval \
+  --overwrite_output_dir \
+  --output_eval \
+  --label_with_bi
 ```
 
 ## Quantization
 We implemented the dynamic quantization version of Albert. If you need to quantify albert, you need to do with the following instructions:
 1. Fine-tune the albert in your own dataset.
 2. Load your own model and run the run_quantalbert_ner.py
+```
+python run_quantalbert_ner.py --data_dir=data/new \
+  --model_type=albert \
+  --model_name_or_path=prev_trained_model\albert_tiny_zh \
+  --task_name=ner \
+  --output_dir=$dir \
+  --vocab_file=prev_trained_model\albert_tiny_zh\vocab.txt \
+  --do_predict \
+  --overwrite_output_dir \
+  --output_eval \
+  --label_with_bi
+```
 
 ## Dataset
 The original dataset is as follows:
